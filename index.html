@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin: 0;">
+    <div class="dark-mode-div">
+<button class="dark" id="dark" onclick="dark_mode();">dark</button>
+</div>
+    <header>
+        <nav>
+            <img src="main-logo.png" alt="">
+            <ul>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>About us</li></a>
+                <a href=""><li>Services</li></a>
+                <a href=""><li>Contact us</li></a>
+            </ul>
+        </nav>
+    </header>
+
+<div class="container">
+<!-- main content -->
+
+<center><h1 id="h1">start the test</h1></center>
+<div class="wrapper">
+    <input type="text" class="input-field" style="opacity: 0;">
+    <div class="caret"></div>
+    <div class="content-box">
+        <div class="typing-text">
+            <p id="paragraph"></p>
+        </div>
+        <div class="content">
+            <ul class="result-details">
+                <li class="time">
+                    <p>Time Left:</p>
+                    <span style="color:#3b4c58;;"><b id="timeLeft"style="color:#3b4c58;">30</b>s</span>
+                </li>
+                <li class="mistake">
+                    <p>Mistakes:</p>
+                    <span id="mistakeCount" style="color:#3b4c58;">0</span>
+                </li>
+                <li class="wpm">
+                    <p>WPM:</p>
+                    <span id="wpmValue" style="color:#3b4c58;">0</span>
+                </li>
+                <li class="cpm">
+                    <p>CPM:</p>
+                    <span id="cpmValue" style="color:#3b4c58;">0</span>
+                </li>
+            </ul>
+           
+        </div>
+        <div class="content-button">
+        <button id="tryAgainBtn" >Try Again</button>
+    </div>
+    </div>
+</div>
+
+<div class="popup" id="resultPopup">
+    <div class="popup-content">
+        <h2>Typing Test <span style="color:#81c4dd;"> Results</span></h2>
+        <p>WPM: <span id="popupWpm" style="color:#81c4dd;"></span></p>
+        <p>Mistakes: <span id="popupMistakes" style="color:#81c4dd;"></span></p>
+        <p>CPM: <span id="popupCpm" style="color:#81c4dd;"></span></p>
+        <center><button onclick="closePopup()" style="cursor: pointer;">Close</button></center>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+    <div class="copyright">
+    <p>&copy; Copyright all rights reserved by SAHIR</p>
+</div>
+
+
+<script src="script.js"></script>
+
+
+
+
+</body>
+</html>
